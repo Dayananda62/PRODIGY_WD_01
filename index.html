@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <section id="home">
+            <h1>Home</h1>
+            <p>Welcome to our website. Here, you can find the latest updates and featured content.</p>
+            <p>Our goal is to provide you with the best services and information.</p>
+            <img src="https://tse3.mm.bing.net/th?id=OIP.ExUMGcgLhnkYGwDJXWDd1QHaF8&pid=Api&P=0&h=180.jpg" alt="Home Image" style="width: 80%; margin-top: 20px;">
+        </section>
+        <section id="about">
+            <h1>About</h1>
+            <div class="about-content">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.QngTggUgdtSwcjRkOgbl8wHaEg&pid=Api&P=0&h=180.jpg" alt="About Image">
+                <div class="about-text">
+                    <p>Learn more about our company and team.</p>
+                    <p>We are dedicated to offering top-notch services and products.</p>
+                    <p>Our mission is to create value for our customers through innovation and commitment.</p>
+                    <p>Founded in 2010, we have a rich history of growth and success.</p>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <h1>Services</h1>
+            <p>Explore the range of services we offer.</p>
+            <div class="service-list">
+                <div class="service-item">
+                    <h2>Service One</h2>
+                    <p>We offer comprehensive solutions for your needs.</p>
+                    <p>Benefits: High quality, reliability, and efficiency.</p>
+                </div>
+                <div class="service-item">
+                    <h2>Service Two</h2>
+                    <p>Our team is specialized in delivering top-notch service.</p>
+                    <p>Features: Customization, support, and competitive pricing.</p>
+                </div>
+                <div class="service-item">
+                    <h2>Service Three</h2>
+                    <p>Get the best results with our professional approach.</p>
+                    <p>Pricing: Affordable and transparent.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>We would love to hear from you!</p>
+            <p>Get in touch with us via the following methods:</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@company.com</p>
+            <p>Address: 123 Main Street, City, Country</p>
+            <form action="#" method="post" id="contactForm" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            alert('Thank you for your message. We will get back to you shortly.');
+        });
+    </script>
+</body>
+</html>
